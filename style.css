@@ -123,4 +123,38 @@ figure figcaption{
     border-color: var(--color-grey-blue);
 }
 
+/*======================================== Responsivness ========================================*/
 
+
+@media screen and (max-width: 700px) {
+    #heading h1{
+        font-size: 38px;
+    }
+    #action{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 420px){
+    #heading h1{
+        font-size: 10vw;
+    }
+    #quote p{
+        font-size: 7vw;
+    }
+    #quote #author{
+        font-size: 5vw;
+    }   
+    #action .big-text{
+        font-size: 5vw;
+    }
+    #action .normal-text{
+        font-size: 4vw;
+    }
+    #action button{
+        font-size: 2vh;
+        padding: 20px 30px 20px 30px;
+    }
+    #action button:after{
+        display: none;
+    }
+}
